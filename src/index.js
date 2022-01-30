@@ -2,11 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import Quiz from "./Quiz";
+import "./Quiz.css";
 import reportWebVitals from "./reportWebVitals";
+import "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Quiz />
   </React.StrictMode>,
   document.getElementById("root")
 );

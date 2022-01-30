@@ -1,0 +1,15 @@
+body {
+  background-color: #087cc0 !important;
+}
+.main-heading {
+  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+  font-size: 10vh;
+  color: rgba(255, 255, 255, 0.8);
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px !important;
+  }
+}
