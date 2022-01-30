@@ -1,31 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Quiz.css";
+import { questions } from "./questions";
 const Quiz = () => {
+  const [currentQuestion, setCurrentQuestion] = useState(0);
   return (
     <div>
       <div className="container d-flex quiz-box">
         <div className="lg-6 quiz-box-1">
-          <div className="ques">Question 1/4</div>
+          <span style={{ fontSize: "2.5vw" }}>Question 1/</span>
+          {questions.length}
           <div className="ques-content">
-            The Iphone was created by which company.
+            {questions[currentQuestion].questionText}
           </div>
         </div>
         <div className="lg-5 quiz-box-2  ">
-          <div>
-            {" "}
-            <button className="ans-btn">Apples</button>
-          </div>
-          <div>
-            {" "}
-            <button className="ans-btn">Intel</button>
-          </div>
-          <div>
-            {" "}
-            <button className="ans-btn">Amazon</button>
-          </div>
-          <div>
-            {" "}
-            <button className="ans-btn">Microsoft</button>
+          <div className="questions">
+            {questions[currentQuestion].answerOption.map((answerOption) => (
+              <button className="ans-btn">{answerOption.answerText}</button>
+            ))}
           </div>
         </div>
       </div>
