@@ -10,29 +10,25 @@
 }
 .ques {
   font-size: 22px;
-  padding-bottom: 1vh;
 }
-.quiz-box-1 {
-  margin: 105px 20px 5px 40px;
-  width: 40vw;
+.quesField {
+  padding: 80px;
+  text-align: center;
+  font-size: larger;
 }
 .ques-content {
   color: aliceblue;
 }
-.quiz-box-2 {
+.ansField {
   border-radius: 10px;
-  width: 50vw;
-  margin: 75px 0px 5px 50px;
-  text-align: right;
-  margin-right: 10%;
+  padding: 60px;
 }
 .ans-btn {
-  flex-direction: column;
   background-color: #202c3d;
   border-radius: 10px;
-
+  margin-top: 20px;
+  padding: 4px;
   width: 30vw;
-  margin-top: 2vh;
   box-shadow: 0 1px 1px rgb(68, 203, 236);
   color: aliceblue;
 }
